@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Project_2.Data;
 
 namespace Project_2.Controllers
 {
@@ -10,19 +12,20 @@ namespace Project_2.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private DataContext _context;
+
+        public ValuesController(DataContext context)
+        {
+            _context = context;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        public async Task<IActionResult> GetValues() => base.Ok(await _context.Values.ToListAsync());
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
+        public async Task<IActionResult> GetValueAsync(int id) => Ok(await _context.Values.SingleOrDefaultAsync(e => e.Id == id));
 
         // POST api/values
         [HttpPost]
