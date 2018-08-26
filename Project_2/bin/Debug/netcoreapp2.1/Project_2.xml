@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Project_2</name>
+    </assembly>
+    <members>
+        <member name="M:Project_2.Controllers.MessagesController.GetMessages">
+            <summary>
+            Gets All Messages.
+            </summary>
+        </member>
+        <member name="M:Project_2.Controllers.ValuesController.GetValues">
+            <summary>
+            Gets All Values.
+            </summary>
+        </member>
+        <member name="M:Project_2.Controllers.ValuesController.GetValueAsync(System.Int32)">
+            <summary>
+            Gets a specific Value.
+            </summary>
+            <param name="id"></param> 
+        </member>
+    </members>
+</doc>

@@ -12,3 +12,5 @@ D:\Test_EF_Swagger\Project_2\obj\Debug\netcoreapp2.1\Project_2.AssemblyInfo.cs
 D:\Test_EF_Swagger\Project_2\obj\Debug\netcoreapp2.1\Project_2.RazorTargetAssemblyInfo.cache
 D:\Test_EF_Swagger\Project_2\obj\Debug\netcoreapp2.1\Project_2.dll
 D:\Test_EF_Swagger\Project_2\obj\Debug\netcoreapp2.1\Project_2.pdb
+D:\Test_EF_Swagger\Project_2\bin\Debug\netcoreapp2.1\Project_2.xml
+D:\Test_EF_Swagger\Project_2\obj\Debug\netcoreapp2.1\Project_2.xml

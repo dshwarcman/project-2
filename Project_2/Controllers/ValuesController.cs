@@ -19,11 +19,16 @@ namespace Project_2.Controllers
             _context = context;
         }
 
-        // GET api/values
+        /// <summary>
+        /// Gets All Values.
+        /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetValues() => base.Ok(await _context.Values.ToListAsync());
 
-        // GET api/values/5
+        /// <summary>
+        /// Gets a specific Value.
+        /// </summary>
+        /// <param name="id"></param> 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValueAsync(int id) => Ok(await _context.Values.SingleOrDefaultAsync(e => e.Id == id));
 
